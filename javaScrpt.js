@@ -50,3 +50,4 @@ function createPost(style, author, verified, title, content)
     return cardRoot; 
 }
 
+// createPost("", "Wyatt",true,"this is a test", "yadsilfaslkdfjalk;sdjf");
