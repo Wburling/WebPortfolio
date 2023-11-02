@@ -12,6 +12,7 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
     .attribution {
       font-size: 11px;
       text-align: center;
@@ -21,6 +22,21 @@
       color: hsl(228, 45%, 44%);
     }
 
+    .myName {
+      font-size: 34px; 
+      text-align: center;
+      padding: 40px;
+      font-family: 'Pacifico', cursive;
+    }
+
+    .cartoonComputer {
+      width: 100%; 
+      text-align: right;
+    }
+
+    .cartoonComputer > img{
+      margin-right: 4em;
+    }
 
     .card {
       padding: 50px;
@@ -30,7 +46,7 @@
     }
 
     .card.card-purple {
-      background-image: url("images/bg-pattern-quotation.svg"); 
+      background-image: url("images/background.png");
       background-repeat: no-repeat;
       background-position-x: 80%;
       background-color: rgb(61, 31, 65);
@@ -74,6 +90,12 @@
 </head>
 
 <body>
+  <div class="myName">
+    Hi, my name is Wyatt Burlingame
+  </div>
+  <div class="cartoonComputer">
+  <img src="images/cartoonComputer.jpeg"/>
+</div>
   <div class="content">
     <div class="card card-purple">
       <div class="header">
@@ -118,55 +140,6 @@
       </div>
     </div>
   </div>
-  <!-- <div class="John">
-  Jonathan Walters
-  Verified Graduate
-
-  The team was very supportive and kept me motivated
-
-  “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
-  for a big company. This was one of the best investments I’ve made in myself. ”
-</div>
-<div class="Jeanette">
-  Jeanette Harmon
-  Verified Graduate
-
-  An overall wonderful and rewarding experience
-
-  “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living 
-  while doing something I love. ”
-</div>
-<div class="Patrick">
-  Patrick Abrams
-  Verified Graduate
-
-  Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
-  learning from their experiences was easy.
-
-  “ The staff seem genuinely concerned about my progress which I find really refreshing. The program 
-  gave me the confidence necessary to be able to go out in the world and present myself as a capable 
-  junior developer. The standard is above the rest. You will get the personal attention you need from 
-  an incredible community of smart and amazing people. ”
-</div>
-<div class="Kira">
-  Kira Whittle
-  Verified Graduate
-
-  Such a life-changing experience. Highly recommended!
-
-  “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from 
-  professionals who can help me learn programming step by step. I was encouraged to enroll by a former 
-  student of theirs who can only say wonderful things about the program. The entire curriculum and staff 
-  did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team 
-  project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial 
-  could ever have. In fact, I’ve often referred to it during interviews as an example of my developent 
-  experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 
-  100% recommend! ”
-</div> -->
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Wyatt Burlingame</a>.
-  </div>
 </body>
-
+<script src="javaScrpt.js"></script>
 </html>
