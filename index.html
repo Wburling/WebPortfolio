@@ -13,6 +13,7 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
     .attribution {
       font-size: 11px;
       text-align: center;
@@ -23,21 +24,10 @@
     }
 
     .myName {
-      font-size: 34px; 
+      font-size: 34px;
       text-align: center;
       padding: 40px;
       font-family: 'Pacifico', cursive;
-    }
-
-    .cartoonComputer {
-      width: 100%; 
-      height: 10%;
-      text-align: right;
-      
-    }
-
-    .cartoonComputer > img{
-      margin-right: 90px;
     }
 
     .card {
@@ -51,14 +41,14 @@
       background-image: url("images/background.png");
       background-repeat: no-repeat;
       background-position-x: 80%;
-      margin-top: 10px; 
-      
+      margin-top: 10px;
+
     }
 
     .card>.header>.author {
       color: black;
       text-align: center;
-      font-size: 20px; 
+      font-size: 20px;
     }
 
     .card>.header>.grad {
@@ -87,15 +77,25 @@
       width: 100%;
       height: 100%;
     }
+
+    .cartoonComputer {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 87%;
+      height: 0%;
+      margin-left: 120px
+    }
+
     @media (max-width: 800px) {
       .content {
         flex-direction: column;
       }
+
       .card {
         min-width: 70%;
       }
     }
-
   </style>
 </head>
 
@@ -104,26 +104,28 @@
     Hi, my name is Wyatt Burlingame
   </div>
   <div class="cartoonComputer">
-  <img src="images/cartoonComputer.jpeg"/>
-</div>
+    <img src="images/computergif.gif" />
+  </div>
   <div class="content">
+
     <div class="card card-skills">
       <div class="header">
         <div class="author">
           <u>Get to Know Me!</u>
         </div>
         <div class="grad">
-          
+
         </div>
       </div>
       <div class="description-title">
         My name is Wyatt Burlingame, and my better half's name is Katy Bartram. We got engaged in July of 2023
       </div>
       <div class="description-content">
-       I graduated Highschool in 2022. I bought a c4 corvette when I was 16 years old.
-       I love to ride side by sides and fourwheelers. Me and my fiance bought a 2008 polaris rzr this year. 
-       I love to hunt, fish, and camp. I've always loved to work on computers. I went to KTEC under there computer science program 
-       and graduated top of my class.
+        I graduated Highschool in 2022. I bought a c4 corvette when I was 16 years old.
+        I love to ride side by sides and fourwheelers. Me and my fiance bought a 2008 polaris rzr this year.
+        I love to hunt, fish, and camp. I've always loved to work on computers. I went to KTEC under there computer
+        science program
+        and graduated top of my class.
       </div>
     </div>
     <div class="card card-skills">
@@ -136,14 +138,15 @@
         </div>
       </div>
       <div class="description-title">
-       I have many different types of skills, ranging from working with computers to being a mechanic for diesel trucks.
+        I have many different types of skills, ranging from working with computers to being a mechanic for diesel
+        trucks.
       </div>
       <div class="description-content">
-        Skills include: 
+        Skills include:
         Coding in C++, C, SML, Prolog, and Python
-        Phisical Computer Repair 
+        Phisical Computer Repair
         Diesel Mechanic
-        
+
 
       </div>
     </div>
@@ -153,4 +156,5 @@
 <script type="text/javascript">
 
 </script>
+
 </html>
