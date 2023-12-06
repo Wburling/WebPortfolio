@@ -23,11 +23,25 @@
       color: hsl(228, 45%, 44%);
     }
 
+    body {
+      background-image: url("images/websiteback.png");
+      background-repeat: no-repeat;
+      margin-top: 5%;
+    }
+
     .myName {
       font-size: 34px;
       text-align: center;
       padding: 40px;
       font-family: 'Pacifico', cursive;
+      color: white;
+      background-image: url("images/background.png");
+      width: 30%;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      margin-bottom: 20px;
+      margin-top: 10px;
     }
 
     .card {
@@ -42,7 +56,6 @@
       background-repeat: no-repeat;
       background-position-x: 80%;
       margin-top: 10px;
-
     }
 
     .card>.header>.author {
@@ -81,17 +94,33 @@
     .cartoonComputer {
       display: flex;
       flex-direction: row;
-      /* justify-content: center; */
+      gap: 25px;
+      align-items: center;
+      justify-content: center;
       width: 100%;
-      height: 0%;
-      padding-bottom: 20px;
-      margin-left: 2%;
-
+      height: 100%;
+      margin-bottom: 20px;
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
     }
 
-    .cartoonComputer>.icons {
-      width: 19%;
-      margin-right: 10%;
+    .projects {
+      align-items: center;
+      justify-content: center;
+      max-width: 25%;
+      padding: 20px;
+      border-radius: 20px;
+      border: 3px solid black;
+      background-image: url("images/background.png");
+      background-repeat: no-repeat;
+      /* background-position-x: 80%; */
+      margin-top: 40px;
+      color: black;
+      text-align: center;
+      font-size: 20px;
+      margin: auto;
+      margin-top: 30px;
     }
 
     @media (max-width: 800px) {
@@ -103,42 +132,9 @@
         min-width: 70%;
       }
 
-      .icons {
-        width: 0%;
-        height: 0%
+      body {
+        background-repeat: repeat;
       }
-
-      .comp {
-        width: 0px;
-        height: 0px;
-      }
-
-      .cartoonComputer {
-        margin-right: 0px;
-        margin-left: 10px;
-        flex-direction: column;
-        justify-content: center;
-        height: 60%;
-        width: 60%;
-
-      }
-    }
-
-    .projects {
-      padding: 20px;
-      border-radius: 20px;
-      border: 3px solid black;
-      max-width: 25%;
-      background-image: url("images/background.png");
-      background-repeat: no-repeat;
-      background-position-x: 80%;
-      margin-top: 10px;
-      justify-content: center;
-      margin-left: 36%;
-      margin-top: 40px;
-      color: black;
-      text-align: center;
-      font-size: 20px;
     }
   </style>
 </head>
@@ -148,12 +144,6 @@
     Hi, my name is Wyatt Burlingame
   </div>
   <div class="cartoonComputer">
-    <div class="comp">
-      <img src="images/cartoonComputer.jpeg" />
-    </div>
-    <div class="icons">
-      <img src="images/Space.png" />
-    </div>
     <img src="images/computergif.gif" />
 
   </div>
@@ -175,8 +165,7 @@
         I graduated Highschool in 2022. I bought a c4 corvette when I was 16 years old.
         I love to ride side by sides and fourwheelers. Me and my fiance bought a 2008 polaris rzr this year.
         I love to hunt, fish, and camp. I've always loved to work on computers. I went to KTEC under there computer
-        science program
-        and graduated top of my class.
+        scieClick here to see some of my projectsass="card card-skills">
       </div>
     </div>
     <div class="card card-skills">
@@ -194,18 +183,23 @@
       </div>
       <div class="description-content">
         Skills include:
-        Coding in C++, C, SML, Prolog, and Python
-        Phisical Computer Repair
-        Diesel Mechanic
-
-
+        Coding in C++, C, SML, Prolog, HTML, Javascript, and Python
+        <div class="newline">
+          Phisical Computer Repair
+        </div>
+        <div class="newline2">
+          Diesel Mechanic
+        </div>
       </div>
     </div>
+  </div>
 
   </div>
-  <div class="projects">
-    <u>Get to see some of my projects</u>
-  </div>
+  <a href="projects.html">
+    <div class="projects">
+      <u>Click here to see some of my projects</u>
+    </div>
+  </a>
 </body>
 <script src="javaScrpt.js"></script>
 <script type="text/javascript">

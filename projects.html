@@ -1,0 +1,197 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <script defer src="app.js"></script>
+    <title>Web Portfolio</title>
+
+    <style>
+        .hidden {
+            opacity: 0;
+            filter: blue(5px);
+            transform: translateX(-100%);
+            transition: all 1s;
+        }
+
+        .show {
+            opacity: 1;
+            filter: blur(0);
+            transform: translateX(0);
+        }
+
+        body {
+            background-image: url("images/projectbackground.png");
+
+        }
+
+        @media (max-width: 800px) {
+            .allContent>.projectBubbles {
+                min-width: 20%;
+            }
+
+            .allContent {
+                flex-direction: column;
+            }
+
+
+        }
+
+        .allContent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .projectBubbles {
+            padding: 10px;
+            border-radius: 20px;
+            border: 3px solid white;
+            /* width: 20%; */
+            background-image: url("images/background.png");
+            margin-top: 10%;
+            margin-bottom: 12%;
+
+
+        }
+
+        .projectBubbles>.allStuff {
+            width: 100%;
+            height: 100%;
+        }
+
+        .projectBubbles>.allStuff>.header {
+            font-size: 30px;
+            color: white;
+        }
+
+        .projectBubbles>.allStuff>.content {
+            font-size: 20px;
+            color: white;
+        }
+
+        .projectBubbles>.allStuff>.picture {
+            /* margin-top: 20px; */
+            width: auto;
+            height: auto;
+            margin: 0 auto;
+            padding: 10px;
+            position: relative;
+        }
+
+        .test {
+            font-size: 30px;
+            justify-content: center;
+            text-align: center;
+            margin-top: 20%;
+        }
+
+        .button {
+            width: 20%;
+            height: 20%;
+            margin: auto;
+        }
+
+        .picture {
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="allContent">
+        <div class="projectBubbles hidden">
+            <div class="allStuff">
+                <div class="header">
+                    Project 1: Tic Tac Toe
+                </div>
+                <div class="content">
+                    Tic tac toe was a coding project that was my final project for the privious CS class.
+                    <div class="under">
+                        <a href="https://github.com/Wburling/finalProject.git">Click here to access the repository</a>
+                    </div>
+                </div>
+                <div class="picture hidden">
+                    <img src="images/tictactoe.png" />
+                </div>
+            </div>
+
+        </div>
+        <div class="projectBubbles hidden">
+            <div class="allStuff">
+                <div class="header">
+                    Project 2: .junk in Bash
+                </div>
+                <div class="content">
+                    .junk in bash was one of my favorite projects that basically recreates the rm command in linux.
+                    <div class="under">
+                        <a href="https://github.com/Wburling/Junk-Bash-Repository.git">Click here to access the
+                            repository</a>
+                    </div>
+                </div>
+                <div class="picture hidden">
+                    <img src="images/project2.png" />
+                </div>
+            </div>
+
+        </div>
+        <div class="projectBubbles hidden">
+            <div class="allStuff">
+                <div class="header">
+                    Project 1: Tic Tac Toe
+                </div>
+                <div class="content">
+                    Tic tac toe was a coding project that was my final project for the privious CS class.
+                    <div class="under">
+                        <a href="https://github.com/Wburling/finalProject.git">Click here to access the repository</a>
+                    </div>
+                </div>
+                <div class="picture hidden">
+                    <img src="images/tictactoe.png" />
+                </div>
+            </div>
+
+        </div>
+        <div class="projectBubbles hidden">
+            <div class="allStuff">
+                <div class="header">
+                    Project 1: Tic Tac Toe
+                </div>
+                <div class="content">
+                    Tic tac toe was a coding project that was my final project for the privious CS class.
+                    <div class="under">
+                        <a href="https://github.com/Wburling/finalProject.git">Click here to access the repository</a>
+                    </div>
+                </div>
+                <div class="picture hidden">
+                    <img src="images/tictactoe.png" />
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <a href="index.html">
+        <div class="button">
+            <div class="projectBubbles">
+                <div class="allStuff">
+
+                    <div class="content">
+                        <div class="test">
+                            Click here for the home screen
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </a>
+</body>
+
+</html>
